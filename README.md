@@ -8,20 +8,20 @@ How is daily AI usage related to productivity, time savings, and user satisfacti
 
 This project explores AI usage patterns among students and professionals through data cleaning, exploratory data analysis (EDA), statistical analysis, and data visualization using Python.
 
-The goal is to discover meaningful patterns in the dataset and understand how reported AI usage relates to productivity, satisfaction, and time savings.
+The goal is to investigate relationships between AI usage and reported outcomes, identify patterns in the dataset, and communicate findings through clear visualizations.
 
 ## Project Objectives
 
-* Analyze AI usage patterns among different user groups.
-* Explore the relationship between daily AI usage and productivity scores.
-* Investigate the relationship between AI usage and reported time savings.
-* Examine the association between AI usage and user satisfaction.
-* Identify popular AI tools and common AI usage purposes.
-* Communicate findings through clear and informative visualizations.
+* Analyze daily AI usage patterns.
+* Explore the relationship between AI usage and productivity.
+* Investigate the relationship between AI usage and time saved.
+* Examine the relationship between AI usage and user satisfaction.
+* Study correlations among numerical variables.
+* Present findings through meaningful visualizations.
 
-## Tools & Technologies
+## Tools and Technologies
 
-* **Python** — Data analysis and programming
+* **Python** — Core programming language
 * **Pandas** — Data cleaning and manipulation
 * **NumPy** — Numerical operations
 * **Matplotlib** — Data visualization
@@ -30,127 +30,89 @@ The goal is to discover meaningful patterns in the dataset and understand how re
 
 ## Dataset
 
-The dataset contains information about AI usage among students and professionals.
+The dataset contains information about AI usage among students and professionals, including usage duration, AI tools, purposes of use, productivity scores, time saved, and satisfaction scores.
 
-It includes attributes such as:
+* **Initial dataset size:** 300 rows and 19 columns
+* **Dataset after duplicate removal:** 288 rows and 19 columns
 
-* Age, gender, country, and profession
-* Education level and user type
-* AI tools and their purposes
-* Daily AI usage hours
-* Monthly AI costs
-* Productivity, accuracy, and satisfaction scores
-* Reported weekly time savings
-* Willingness to recommend AI tools
+**Data source:** [Kaggle dataset](https://www.kaggle.com/)
 
-**Dataset size after duplicate removal:** 288 rows and 19 columns.
-
-The dataset is synthetic, so the findings describe patterns within the available data and should not be treated as representative of all real-world AI users.
-
-**Dataset source:** AI Usage and Impact on Students and Professionals — Kaggle.
+*Note: Replace the general Kaggle link above with the exact dataset page URL if you have it.*
 
 ## Project Workflow
 
-### 1. Data Inspection
+1. Imported the dataset using Pandas.
+2. Inspected the dataset structure and data types.
+3. Checked for missing values and duplicate records.
+4. Cleaned and prepared the data for analysis.
+5. Performed exploratory data analysis.
+6. Examined relationships between AI usage and other variables.
+7. Created visualizations using Matplotlib and Seaborn.
+8. Interpreted the results and documented key observations.
 
-* Loaded the dataset into Pandas.
-* Examined the dataset's structure, column names, data types, and summary statistics.
-* Identified missing values, inconsistent category labels, and duplicate records.
+## Visualizations
 
-### 2. Data Cleaning
+### 1. AI Usage vs. Productivity
 
-* Handled missing values using appropriate imputation methods.
-* Converted numerical fields to appropriate data types.
-* Standardized inconsistent category labels.
-* Removed 12 duplicate records, reducing the dataset from 300 to 288 rows.
-* Checked the cleaned data using summary statistics and missing-value checks.
+This visualization explores the relationship between daily AI usage hours and reported productivity scores.
 
-### 3. Exploratory Data Analysis
+![AI Usage vs. Productivity](ai_usage_vs_productivity.png)
 
-* Examined the distribution of AI tools and usage purposes.
-* Compared AI usage across user types.
-* Investigated relationships between AI usage, productivity, and time savings.
-* Compared productivity scores across AI tools.
-* Explored correlations among numerical variables.
+### 2. AI Usage vs. Time Saved
 
-### 4. Data Visualization
+This visualization examines how daily AI usage relates to reported time saved per week.
 
-Created seven visualizations to explore patterns and communicate findings:
+![AI Usage vs. Time Saved](ai_usage_vs_time_saved.png)
 
-1. AI Tool Popularity
-2. AI Usage by User Type
-3. AI Usage vs. Productivity
-4. AI Usage Purposes
-5. Productivity Scores Across AI Tools
-6. Correlation Heatmap
-7. AI Usage vs. Time Saved
+### 3. Correlation Heatmap
+
+The correlation heatmap summarizes relationships among numerical variables in the dataset.
+
+![AI Usage Correlation Heatmap](ai_usage_correlation_heatmap.png)
 
 ## Key Findings
 
-### 1. AI Usage and Time Savings
+The analysis identified the following patterns in the dataset:
 
-A positive correlation of approximately **0.739** was observed between daily AI usage and reported weekly time savings.
+* **AI usage and productivity:** A positive correlation of approximately **0.637** was observed.
+* **AI usage and time saved:** The analysis reported a positive correlation of approximately **0.739**.
+* **AI usage and satisfaction:** The analysis reported a positive correlation of approximately **0.419**.
+* **Average daily AI usage:** Approximately **2.92 hours**.
+* **Average satisfaction score:** Approximately **6.13**.
+* **Recommendation rate:** Approximately **60.76%** of respondents would recommend AI tools.
 
-This was the strongest of the three examined relationships.
-
-### 2. AI Usage and Productivity
-
-A positive correlation of approximately **0.637** was observed between daily AI usage and productivity scores.
-
-Within this dataset, higher reported AI usage tended to be associated with higher productivity scores.
-
-### 3. AI Usage and Satisfaction
-
-A positive correlation of approximately **0.419** was observed between daily AI usage and satisfaction scores.
-
-This relationship was weaker than the relationships with time savings and productivity.
-
-### 4. Average Daily AI Usage
-
-The average daily AI usage was approximately **2.92 hours**.
-
-### 5. User Satisfaction
-
-The average satisfaction score was approximately **6.13**.
-
-### 6. Willingness to Recommend AI
-
-Approximately **60.76%** of records indicated that users would recommend AI tools.
-
-*Note: Correlation does not imply causation. These results reflect the analyzed dataset and do not establish that increased AI usage directly causes greater productivity, time savings, or satisfaction.*
+*These figures should be verified against the final cleaned dataset and notebook outputs before publication. Correlation indicates an association, not causation.*
 
 ## Skills Demonstrated
 
-Through this project, I practised:
-
 * Data cleaning and preprocessing
-* Handling missing values and duplicate records
-* Data type conversion and category standardization
-* Exploratory data analysis
-* Descriptive statistics
-* Correlation analysis
-* Data visualization using Matplotlib and Seaborn
-* Interpreting and communicating analytical findings
+* Exploratory data analysis (EDA)
+* Missing-value and duplicate handling
+* Statistical correlation analysis
+* Data visualization
+* Python programming
+* Communicating data-driven insights
 
 ## Project Structure
 
 ```text
 ai-usage-data-analysis/
 │
-├── AI_Usage_Data_Analysis.ipynb
-└── README.md
+├── Python_Project_Analysis.ipynb
+├── README.md
+├── ai_usage_vs_productivity.png
+├── ai_usage_vs_time_saved.png
+└── ai_usage_correlation_heatmap.png
 ```
 
 ## Conclusion
 
-This project helped me apply Python-based data analysis techniques to explore AI usage patterns and their relationships with productivity, reported time savings, and user satisfaction.
+This project explores how AI usage relates to productivity, time savings, and user satisfaction within the available dataset.
 
-By working through data cleaning, exploratory analysis, correlation analysis, and visualization, I gained practical experience in transforming raw data into understandable insights.
+The visualizations help communicate the observed patterns and demonstrate practical skills in Python-based data analysis. Further investigation with additional data would be needed to understand whether these relationships generalize beyond this dataset.
 
-This project represents my continued learning and development in **Python, data analysis, and data visualization**.
+## Author
 
----
+**Kanika Karosiya**
 
-**Author:** Kanika Karosiya
-
-**Focus Areas:** Python | Data Analysis | Exploratory Data Analysis | Data Visualization
+Aspiring Data Analyst | Python | Pandas | NumPy | Data Visualization
