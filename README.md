@@ -151,6 +151,6 @@ This project represents my continued learning and development in **Python, data 
 
 ---
 
-**Author:** Kanika Karoshia
+**Author:** Kanika Karosiya
 
 **Focus Areas:** Python | Data Analysis | Exploratory Data Analysis | Data Visualization
